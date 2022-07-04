@@ -28,8 +28,17 @@
 //-------------------------------------------------------------------------------------------
 //Q4
 
-function calculateAreaTriangle(base,height){
-    return .5*base*height;
+// function calculateAreaTriangle(base,height){
+//     return .5*base*height;
+// }
+
+// console.log(calculateAreaTriangle(20,20));
+
+//-------------------------------------------------------------------------------------------
+//Q5
+
+function appendFrontend(word){
+    return word+="Frontend";
 }
 
-console.log(calculateAreaTriangle(20,20));
+console.log(appendFrontend("Orange"));
