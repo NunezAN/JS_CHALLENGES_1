@@ -82,7 +82,16 @@
 //-------------------------------------------------------------------------------------------
 //Q10
 
-function calcRemainder(num1,num2){
-    return num1%num2;
+// function calcRemainder(num1,num2){
+//     return num1%num2;
+// }
+// console.log(calcRemainder(9,8));
+
+//-------------------------------------------------------------------------------------------
+//Q11
+
+function isOdd(num){
+    return (num%2)>0;
 }
-console.log(calcRemainder(9,8));
+
+console.log(isOdd(3));
