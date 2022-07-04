@@ -64,8 +64,17 @@
 //-------------------------------------------------------------------------------------------
 //Q8
 
-function oppositeBolean(bool){
-    return !bool;
+// function oppositeBolean(bool){
+//     return !bool;
+// }
+
+// console.log(oppositeBolean(false));
+
+//-------------------------------------------------------------------------------------------
+//Q9
+
+function isNotZero(num){
+    return num === 0;
 }
 
-console.log(oppositeBolean(false));
+console.log(isNotZero(0));
