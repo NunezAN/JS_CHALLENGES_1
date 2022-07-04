@@ -37,8 +37,18 @@
 //-------------------------------------------------------------------------------------------
 //Q5
 
-function appendFrontend(word){
-    return word+="Frontend";
+// function appendFrontend(word){
+//     return word+="Frontend";
+// }
+
+// console.log(appendFrontend("Orange"));
+
+//-------------------------------------------------------------------------------------------
+//Q6
+
+function sumGreaterThan100(num1, num2){
+    let sum = num1+num2;
+    return (sum>100);
 }
 
-console.log(appendFrontend("Orange"));
+console.log(sumGreaterThan100(50,51))
