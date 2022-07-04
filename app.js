@@ -7,6 +7,7 @@
 // console.log(`addition(-3,-6) -> ${addition(-3,-6)}`);
 // console.log(`addition(7,3) -> ${addition(7,3)}`);
 
+//-------------------------------------------------------------------------------------------
 //Q2
 
 // function convertHourToSeconds(hours){
@@ -15,10 +16,20 @@
 
 // console.log(convertHourToSeconds(24));
 
+//-------------------------------------------------------------------------------------------
 //Q3
 
-function calculatePerimeter(length, width){
-    return (length *2) + (width * 2)
+// function calculatePerimeter(length, width){
+//     return (length *2) + (width * 2)
+// }
+
+// console.log(calculatePerimeter(2,9));
+
+//-------------------------------------------------------------------------------------------
+//Q4
+
+function calculateAreaTriangle(base,height){
+    return .5*base*height;
 }
 
-console.log(calculatePerimeter(2,9));
+console.log(calculateAreaTriangle(20,20));
