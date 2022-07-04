@@ -56,7 +56,16 @@
 //-------------------------------------------------------------------------------------------
 //Q7
 
-function lessThanOrEqualToZero(num){
-    return num <=0;
+// function lessThanOrEqualToZero(num){
+//     return num <=0;
+// }
+// console.log(lessThanOrEqualToZero(0));
+
+//-------------------------------------------------------------------------------------------
+//Q8
+
+function oppositeBolean(bool){
+    return !bool;
 }
-console.log(lessThanOrEqualToZero(0));
+
+console.log(oppositeBolean(false));
