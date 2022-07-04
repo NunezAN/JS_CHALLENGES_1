@@ -90,8 +90,17 @@
 //-------------------------------------------------------------------------------------------
 //Q11
 
-function isOdd(num){
-    return (num%2)>0;
+// function isOdd(num){
+//     return (num%2)>0;
+// }
+
+// console.log(isOdd(3));
+
+//-------------------------------------------------------------------------------------------
+//Q12
+
+function booleanInteger(num){
+    return num%2===0 ? 1 : -1;
 }
 
-console.log(isOdd(3));
+console.log(booleanInteger(5));
