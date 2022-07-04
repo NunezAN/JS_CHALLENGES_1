@@ -74,7 +74,7 @@
 //Q9
 
 function isNotZero(num){
-    return num === 0;
+    return num != 0;
 }
 
-console.log(isNotZero(0));
+console.log(isNotZero(null));
