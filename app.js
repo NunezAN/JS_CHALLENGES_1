@@ -73,8 +73,16 @@
 //-------------------------------------------------------------------------------------------
 //Q9
 
-function isNotZero(num){
-    return !(num === 0);
-}
+// function isNotZero(num){
+//     return !(num === 0);
+// }
 
-console.log(isNotZero(0));
+// console.log(isNotZero(0));
+
+//-------------------------------------------------------------------------------------------
+//Q10
+
+function calcRemainder(num1,num2){
+    return num1%num2;
+}
+console.log(calcRemainder(9,8));
