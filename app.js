@@ -9,8 +9,16 @@
 
 //Q2
 
-function convertHourToSeconds(hours){
-    return hours*3600;
+// function convertHourToSeconds(hours){
+//     return hours*3600;
+// }
+
+// console.log(convertHourToSeconds(24));
+
+//Q3
+
+function calculatePerimeter(length, width){
+    return (length *2) + (width * 2)
 }
 
-console.log(convertHourToSeconds(24));
+console.log(calculatePerimeter(2,9));
