@@ -46,9 +46,17 @@
 //-------------------------------------------------------------------------------------------
 //Q6
 
-function sumGreaterThan100(num1, num2){
-    let sum = num1+num2;
-    return (sum>100);
-}
+// function sumGreaterThan100(num1, num2){
+//     let sum = num1+num2;
+//     return (sum>100);
+// }
 
-console.log(sumGreaterThan100(50,51))
+// console.log(sumGreaterThan100(50,51))
+
+//-------------------------------------------------------------------------------------------
+//Q7
+
+function lessThanOrEqualToZero(num){
+    return num <=0;
+}
+console.log(lessThanOrEqualToZero(0));
