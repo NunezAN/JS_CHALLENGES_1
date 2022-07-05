@@ -134,8 +134,17 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q2
 
-function arrLength(arr){
-    return arr.length;
+// function arrLength(arr){
+//     return arr.length;
+// }
+
+// console.log(arrLength([5,0,-4,1]));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q3
+
+function lastElem(arr){
+    return arr[arr.length - 1];
 }
 
-console.log(arrLength([5,0,-4,1]));
+console.log(lastElem([null,5,false]));
