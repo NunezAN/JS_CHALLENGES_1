@@ -99,8 +99,16 @@
 //-------------------------------------------------------------------------------------------
 //Q12
 
-function booleanInteger(num){
-    return num%2===0 ? 1 : -1;
-}
+// function booleanInteger(num){
+//     return num%2===0 ? 1 : -1;
+// }
 
-console.log(booleanInteger(5));
+// console.log(booleanInteger(5));
+
+//-------------------------------------------------------------------------------------------
+//Q13
+
+function isLoggedInAndSubscribed(string1,string2){
+    return (string1 === "LOGGED_IN" && string2 === "SUBSCRIBED")
+}
+console.log(isLoggedInAndSubscribed("LOGGED_IN","SUBSCRIBED"));
