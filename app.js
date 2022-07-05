@@ -193,13 +193,26 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q7
 
-function getMax(arr){
-    let max = arr[0];
-    for(i=1;i<arr.length;i++){
-        if(arr[i] > max){
-            max= arr[i];
-        }
+// function getMax(arr){
+//     let max = arr[0];
+//     for(i=1;i<arr.length;i++){
+//         if(arr[i] > max){
+//             max= arr[i];
+//         }
+//     }
+//     return max;
+// }
+// console.log(getMax([12,10,-20]));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q8
+
+function reverseString(word){
+    let reverseString = "";
+    for(i=word.length-1; i>=0; i--){
+        reverseString+=word[i];
     }
-    return max;
+    return reverseString;
 }
-console.log(getMax([12,10,-20]));
+
+console.log(reverseString("This is cool"));
