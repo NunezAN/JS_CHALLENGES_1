@@ -178,14 +178,28 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q6
 
-function calcTime(sec){
-    let seconds = sec % 60;
-    let minute = (sec - seconds)/60;
-    let mmss ="";
+// function calcTime(sec){
+//     let seconds = sec % 60;
+//     let minute = (sec - seconds)/60;
+//     let mmss ="";
     
-    minute > 9 ? mmss+=`${minute}`: mmss+=`0${minute}`;
-    seconds > 9 ? mmss+=`:${seconds}`: mmss+=`:0${seconds}`;
-    return mmss;
-}
+//     minute > 9 ? mmss+=`${minute}`: mmss+=`0${minute}`;
+//     seconds > 9 ? mmss+=`:${seconds}`: mmss+=`:0${seconds}`;
+//     return mmss;
+// }
 
-console.log(calcTime(6));
+// console.log(calcTime(6));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q7
+
+function getMax(arr){
+    let max = arr[0];
+    for(i=1;i<arr.length;i++){
+        if(arr[i] > max){
+            max= arr[i];
+        }
+    }
+    return max;
+}
+console.log(getMax([12,10,-20]));
