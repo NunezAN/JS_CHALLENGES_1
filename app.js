@@ -152,12 +152,25 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q4
 
-function arrSum(arr){
+// function arrSum(arr){
+//     let sum=0;
+//     for(i=0;i<arr.length;i++){
+//         sum+=arr[i];
+//     }
+//     return sum;
+// }
+
+// console.log(arrSum([100,200,500]));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q5
+
+function progressiveSum(num){
     let sum=0;
-    for(i=0;i<arr.length;i++){
-        sum+=arr[i];
+    for(i=0;i<=num;i++)
+    {
+        sum+=i;
     }
     return sum;
 }
-
-console.log(arrSum([100,200,500]));
+console.log(progressiveSum(600));
