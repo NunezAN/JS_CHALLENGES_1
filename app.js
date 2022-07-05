@@ -117,7 +117,16 @@
 //-------------------------------------------------------------------------------------------
 //Q14
 
-function isLoggedInAndSubscribed(string1,string2){
-    return (string1 === "LOGGED_IN" || string2 === "SUBSCRIBED")
+// function isLoggedInAndSubscribed(string1,string2){
+//     return (string1 === "LOGGED_IN" || string2 === "SUBSCRIBED")
+// }
+// console.log(isLoggedInAndSubscribed("LOGGED_OUT","UNSUBSCRIBED"));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q1
+
+function filterOutFalsy(obj1, obj2)
+{
+    return obj1 == false ? obj1 : obj2;
 }
-console.log(isLoggedInAndSubscribed("LOGGED_OUT","UNSUBSCRIBED"));
+console.log(filterOutFalsy(true,"dog"))
