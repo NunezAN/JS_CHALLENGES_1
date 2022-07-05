@@ -207,12 +207,21 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q8
 
-function reverseString(word){
-    let reverseString = "";
-    for(i=word.length-1; i>=0; i--){
-        reverseString+=word[i];
-    }
-    return reverseString;
+// function reverseString(word){
+//     let reverseString = "";
+//     for(i=word.length-1; i>=0; i--){
+//         reverseString+=word[i];
+//     }
+//     return reverseString;
+// }
+
+// console.log(reverseString("This is cool"));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q9
+
+function convertToZeros(arr){
+    return arr.map((element) => 0)
 }
 
-console.log(reverseString("This is cool"));
+console.log(convertToZeros([1,2,3,4,5]));
