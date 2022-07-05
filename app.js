@@ -108,7 +108,16 @@
 //-------------------------------------------------------------------------------------------
 //Q13
 
+// function isLoggedInAndSubscribed(string1,string2){
+//     return (string1 === "LOGGED_IN" && string2 === "SUBSCRIBED")
+// }
+// console.log(isLoggedInAndSubscribed("LOGGED_IN","SUBSCRIBED"));
+
+
+//-------------------------------------------------------------------------------------------
+//Q14
+
 function isLoggedInAndSubscribed(string1,string2){
-    return (string1 === "LOGGED_IN" && string2 === "SUBSCRIBED")
+    return (string1 === "LOGGED_IN" || string2 === "SUBSCRIBED")
 }
-console.log(isLoggedInAndSubscribed("LOGGED_IN","SUBSCRIBED"));
+console.log(isLoggedInAndSubscribed("LOGGED_OUT","UNSUBSCRIBED"));
