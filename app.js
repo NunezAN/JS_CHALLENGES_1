@@ -125,8 +125,17 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q1
 
-function filterOutFalsy(obj1, obj2)
-{
-    return obj1 == false ? obj1 : obj2;
+// function filterOutFalsy(obj1, obj2)
+// {
+//     return obj1 == false ? obj1 : obj2;
+// }
+// console.log(filterOutFalsy(true,"dog"))
+
+//-------------------------------------------------------------------------------------------
+//Medium Q2
+
+function arrLength(arr){
+    return arr.length;
 }
-console.log(filterOutFalsy(true,"dog"))
+
+console.log(arrLength([5,0,-4,1]));
