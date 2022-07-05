@@ -143,8 +143,21 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q3
 
-function lastElem(arr){
-    return arr[arr.length - 1];
+// function lastElem(arr){
+//     return arr[arr.length - 1];
+// }
+
+// console.log(lastElem([null,5,false]));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q4
+
+function arrSum(arr){
+    let sum=0;
+    for(i=0;i<arr.length;i++){
+        sum+=arr[i];
+    }
+    return sum;
 }
 
-console.log(lastElem([null,5,false]));
+console.log(arrSum([100,200,500]));
