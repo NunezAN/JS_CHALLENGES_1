@@ -165,12 +165,27 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q5
 
-function progressiveSum(num){
-    let sum=0;
-    for(i=0;i<=num;i++)
-    {
-        sum+=i;
-    }
-    return sum;
+// function progressiveSum(num){
+//     let sum=0;
+//     for(i=0;i<=num;i++)
+//     {
+//         sum+=i;
+//     }
+//     return sum;
+// }
+// console.log(progressiveSum(600));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q6
+
+function calcTime(sec){
+    let seconds = sec % 60;
+    let minute = (sec - seconds)/60;
+    let mmss ="";
+    
+    minute > 9 ? mmss+=`${minute}`: mmss+=`0${minute}`;
+    seconds > 9 ? mmss+=`:${seconds}`: mmss+=`:0${seconds}`;
+    return mmss;
 }
-console.log(progressiveSum(600));
+
+console.log(calcTime(6));
