@@ -220,8 +220,30 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q9
 
-function convertToZeros(arr){
-    return arr.map((element) => 0)
-}
+// function convertToZeros(arr){
+//     return arr.map((element) => 0)
+// }
 
-console.log(convertToZeros([1,2,3,4,5]));
+// console.log(convertToZeros([1,2,3,4,5]));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q10
+
+//for loop solution
+// function removeApples(arr){
+//     let newArr = [];
+//     for(i=0;i<arr.length;i++){
+//         if(arr[i]!=="Apple")
+//         {
+//             newArr.push(arr[i]);
+//         }
+//     }
+//     return newArr;
+// }
+
+
+//solution using arr.filter
+function removeApples(arr){
+    return arr.filter(element => element !=="Apple");
+}
+console.log(removeApples(["Banana","Orange","Apple"]));
