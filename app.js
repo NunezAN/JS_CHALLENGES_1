@@ -255,16 +255,46 @@
 //     return arr.filter(element => !!element === true);
 // }
 
-function filterOutFalsy(arr){
-    let newArr=[];
-    for(i=0;i<arr.length;i++){
-        if(!!arr[i]=== true){
-            newArr.push(arr[i]);
+// function filterOutFalsy(arr){
+//     let newArr=[];
+//     for(i=0;i<arr.length;i++){
+//         if(!!arr[i]=== true){
+//             newArr.push(arr[i]);
+//         }
+//     }
+//     return newArr;
+// }
+
+// console.log(filterOutFalsy(["",[],0,null,undefined,"0"]));
+// console.log(filterOutFalsy(["tomato","Orange","Banana",false]));
+// console.log(filterOutFalsy(["Banana", "Orange", "Apple"]));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q12
+
+// function convertToBoolean(arr){
+//     return arr.map(elem => {
+//         return !!elem;
+//     });
+// }
+// console.log(convertToBoolean([500,0,"David","",[]]));
+
+//-------------------------------------------------------------------------------------------
+//Advanced Q1
+
+function showRating(num){
+    let starString="";
+    let wholeRating = Math.floor(num);
+    for(i=0;i<wholeRating;i++){
+        starString+="*";
+        if(i!=wholeRating-1){
+            starString +=" ";
         }
     }
-    return newArr;
+    if(num%1 > 0){
+        starString +=" .";
+    }
+    return starString;
 }
 
-console.log(filterOutFalsy(["",[],0,null,undefined,"0"]));
-console.log(filterOutFalsy(["tomato","Orange","Banana",false]));
-console.log(filterOutFalsy(["Banana", "Orange", "Apple"]));
+console.log(showRating(1));
