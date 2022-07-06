@@ -318,9 +318,10 @@
 //     return arr;
 // }
 function sortLowToHigh(arr){
-    return arr.sort();
+    return arr.sort((a,b)=> a-b);
 }
 
 console.log(sortLowToHigh([5,10,0,-5]));
 console.log(sortLowToHigh([10,10,20,30,40,50]));
 console.log(sortLowToHigh([3,2,1,0]));
+console.log(sortLowToHigh([1,5,0,10,10000]));
