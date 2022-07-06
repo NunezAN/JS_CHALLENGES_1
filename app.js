@@ -243,7 +243,20 @@
 
 
 //solution using arr.filter
-function removeApples(arr){
-    return arr.filter(element => element !=="Apple");
+// function removeApples(arr){
+//     return arr.filter(element => element !=="Apple");
+// }
+// console.log(removeApples(["Banana","Orange","Apple"]));
+
+//-------------------------------------------------------------------------------------------
+//Medium Q11
+
+function filterOutFalsy(arr){
+    return arr.filter(element => {
+        return element;
+    });
 }
-console.log(removeApples(["Banana","Orange","Apple"]));
+
+console.log(filterOutFalsy(["",[],0,null,undefined,"0"]));
+console.log(filterOutFalsy(["tomato","Orange","Banana",false]));
+console.log(filterOutFalsy(["Banana", "Orange", "Apple"]));
