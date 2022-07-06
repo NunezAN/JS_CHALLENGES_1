@@ -282,19 +282,45 @@
 //-------------------------------------------------------------------------------------------
 //Advanced Q1
 
-function showRating(num){
-    let starString="";
-    let wholeRating = Math.floor(num);
-    for(i=0;i<wholeRating;i++){
-        starString+="*";
-        if(i!=wholeRating-1){
-            starString +=" ";
-        }
-    }
-    if(num%1 > 0){
-        starString +=" .";
-    }
-    return starString;
+// function showRating(num){
+//     let starString="";
+//     let wholeRating = Math.floor(num);
+//     for(i=0;i<wholeRating;i++){
+//         starString+="*";
+//         if(i!=wholeRating-1){
+//             starString +=" ";
+//         }
+//     }
+//     if(num%1 > 0){
+//         starString +=" .";
+//     }
+//     return starString;
+// }
+
+// console.log(showRating(1));
+
+//-------------------------------------------------------------------------------------------
+//Advanced Q2
+
+// function sortLowToHigh(arr){
+//     for(i=0;i<arr.length;i++){
+//         for(j=i+1;j<arr.length;j++){
+//             if(arr[i]>arr[j])
+//             {
+//                 console.log(`i=${arr[i]}`);
+//                 console.log(`j=${arr[j]}`);
+//                 let temp = arr[i];
+//                 arr[i]=arr[j];
+//                 arr[j]=temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+function sortLowToHigh(arr){
+    return arr.sort();
 }
 
-console.log(showRating(1));
+console.log(sortLowToHigh([5,10,0,-5]));
+console.log(sortLowToHigh([10,10,20,30,40,50]));
+console.log(sortLowToHigh([3,2,1,0]));
