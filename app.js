@@ -317,11 +317,26 @@
 //     }
 //     return arr;
 // }
-function sortLowToHigh(arr){
-    return arr.sort((a,b)=> a-b);
+// function sortLowToHigh(arr){
+//     return arr.sort((a,b)=> a-b);
+// }
+
+// console.log(sortLowToHigh([5,10,0,-5]));
+// console.log(sortLowToHigh([10,10,20,30,40,50]));
+// console.log(sortLowToHigh([3,2,1,0]));
+// console.log(sortLowToHigh([1,5,0,10,10000]));
+
+//-------------------------------------------------------------------------------------------
+//Advanced Q3
+
+function sortHighToLow(object)
+{
+    return object.sort((a,b) => b.price - a.price);
 }
 
-console.log(sortLowToHigh([5,10,0,-5]));
-console.log(sortLowToHigh([10,10,20,30,40,50]));
-console.log(sortLowToHigh([3,2,1,0]));
-console.log(sortLowToHigh([1,5,0,10,10000]));
+console.log(sortHighToLow([
+    {id:1, price: 50},
+    {id: 2, price: 30},
+    {id: 3, price: 60},
+    {id: 4, price: 10}
+]));
