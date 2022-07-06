@@ -251,8 +251,18 @@
 //-------------------------------------------------------------------------------------------
 //Medium Q11
 
+// function filterOutFalsy(arr){
+//     return arr.filter(element => !!element === true);
+// }
+
 function filterOutFalsy(arr){
-    return arr.filter(element => !!element === true);
+    let newArr=[];
+    for(i=0;i<arr.length;i++){
+        if(!!arr[i]=== true){
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
 }
 
 console.log(filterOutFalsy(["",[],0,null,undefined,"0"]));
