@@ -252,9 +252,7 @@
 //Medium Q11
 
 function filterOutFalsy(arr){
-    return arr.filter(element => {
-        return element;
-    });
+    return arr.filter(element => !!element === true);
 }
 
 console.log(filterOutFalsy(["",[],0,null,undefined,"0"]));
