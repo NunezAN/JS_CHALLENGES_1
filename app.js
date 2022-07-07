@@ -329,14 +329,30 @@
 //-------------------------------------------------------------------------------------------
 //Advanced Q3
 
-function sortHighToLow(object)
-{
-    return object.sort((a,b) => b.price - a.price);
+// function sortHighToLow(object)
+// {
+//     return object.sort((a,b) => b.price - a.price);
+// }
+
+// console.log(sortHighToLow([
+//     {id:1, price: 50},
+//     {id: 2, price: 30},
+//     {id: 3, price: 60},
+//     {id: 4, price: 10}
+// ]));
+
+//-------------------------------------------------------------------------------------------
+//Advanced Q5
+
+async function postsByUser(userID){
+    const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+    
+    const result = await promise.json();
+    
+    const posts = result.filter(element => element.userId === userID); 
+    
+    return posts;
 }
 
-console.log(sortHighToLow([
-    {id:1, price: 50},
-    {id: 2, price: 30},
-    {id: 3, price: 60},
-    {id: 4, price: 10}
-]));
+console.log(postsByUser(6));
+
