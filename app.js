@@ -344,15 +344,30 @@
 //-------------------------------------------------------------------------------------------
 //Advanced Q5
 
-async function postsByUser(userID){
-    const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+// async function postsByUser(userID){
+//     const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
     
+//     const result = await promise.json();
+    
+//     const posts = result.filter(element => element.userId === userID); 
+    
+//     return posts;
+// }
+
+// console.log(postsByUser(6));
+
+//-------------------------------------------------------------------------------------------
+//Advanced Q6
+
+async function firstSixIncomplete(){
+    const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+
     const result = await promise.json();
+
+    const todos = result.filter(element => !element.completed);
+
+    return todos.slice(0,6);
     
-    const posts = result.filter(element => element.userId === userID); 
-    
-    return posts;
 }
 
-console.log(postsByUser(6));
-
+console.log(firstSixIncomplete());
